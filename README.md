@@ -14,7 +14,7 @@ This project was inspired by my kitten Bella and my love for coffee!
 ---
 
 # Live Project
-🔗 [View Bella’s Kitten Café here!](https://akamaeckerman.github.io/assignment-2-CSI-2999-/)
+🔗 [View Bella’s Kitten Café here!](https://akameackerman.github.io/assignment-2-CSI-2999-)
 
 ---
 
