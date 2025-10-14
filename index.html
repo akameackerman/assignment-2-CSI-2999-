@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella’s Kitten Café</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- ========= HEADER ========= -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Bella’s Kitten Café Logo">
+        </div>
+        <div>
+          <strong>Bella’s Kitten Café</strong><br>
+          <span class="subtitle">Purr-fect treats & cozy vibes</span>
+        </div>
+      </div>
+
+      <nav class="links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========= HERO ========= -->
+  <section class="hero container">
+    <div class="hero-text">
+      <span class="badge">Meet our mascot: <strong>Bella</strong></span>
+      <h1>Kitten-themed café with meow-licious drinks</h1>
+      <p>
+        Hand-crafted lattes, paw-printed cupcakes, and cozy corners.  
+        Scroll to see the menu — all featuring real photos from Bella’s Café!
+      </p>
+      <div class="buttons">
+        <a href="#menu" class="btn">Order now</a>
+        <button onclick="meowOfTheDay()" class="btn secondary">Meow of the Day</button>
+      </div>
+      <p id="meow" class="quote">Paws and relax — you deserve a treat.</p>
+    </div>
+
+    <div class="hero-img">
+      <img src="assets/bella.jpg" alt="Bella the kitten" />
+    </div>
+  </section>
+
+  <!-- ========= MENU ========= -->
+  <section id="menu" class="container menu">
+    <h2>Menu</h2>
+    <div class="cards" id="menuGrid"></div>
+  </section>
+
+  <!-- ========= ABOUT US ========= -->
+  <section id="about" class="container about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Bella’s Kitten Café began with a simple dream — to combine my love for my kitten <strong>Bella</strong> 
+        and my lifelong obsession with the cozy aroma of coffee.  
+        Every latte, cupcake, and treat on our menu is inspired by the warmth, comfort, and joy that Bella brings into my life.
+      </p>
+      <p>
+        What started as a fun idea for a small cat-themed café turned into a passion project dedicated to
+        creating a space where people (and paws) enjoy their time together.  
+        Whether you’re here for a <em>Capurrr-ccino</em> or just some cozy kitten vibes, welcome to our little corner of happiness!
+      </p>
+    </div>
+    <div class="about-photo">
+      <img src="assets/header.jpg" alt="Café interior with cats">
+    </div>
+  </section>
+
+  <!-- ========= CONTACT ========= -->
+  <section id="contact" class="container contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or just want to say hi? Reach out to us below — we’d love to hear from you!</p>
+    <form onsubmit="return validateOrderForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Message or Feedback"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bella’s Kitten Café  |  Created with love by Mariam & Bella </p>
+  </footer>
+
+  <!-- ========= JS ========= -->
+  <script src="main.js"></script>
+</body>
+</html>
